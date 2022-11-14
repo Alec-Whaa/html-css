@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Módulo 2</title>
+    <style>
+        body{
+            background-color: #83E1AD;
+            font-family: Arial, Helvetica, sans-serif;
+            min-width: 400px;
+            max-height: 800px;
+            color: white;
+
+        }
+        header{
+            text-align: center;
+            text-shadow: 3px 1px 3px black;
+            background-image: linear-gradient(to bottom, #3DDC84, #1A5C38);
+            border: 0px;
+            height: 140px;
+            width: auto;
+            margin: -20px -8px;
+            min-width: 500px;
+        }
+        header > nav{
+            padding: 5px 6px 2px 5px;
+            text-align: initial;
+            color: white;
+            min-width: 600px;           
+        }
+        main{
+            color: black;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+            width: 80%;
+            height: auto;
+        }
+        main > article{
+            font-family:;
+
+
+        }
+        .video{
+            position: relative;
+            height: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 57.789845%;
+            background-color: #063D1E;
+
+        }
+        .video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+        .imagem{
+            position: relative;
+            height: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: -220px;
+            padding-bottom: 50%;
+            
+        }
+        .imagem > img{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 50%;
+        }
+
+        aside{
+            background-color: #C5EBD6;
+            margin: 0px 10px;
+            border: 0px solid #C5EBD6;
+            border-radius: 10px 10px 10px 10px;
+        }
+        #text-l{
+            border-radius: 5px 5px 1px 1px;
+            text-align: left;
+            background-color: #2FA866;
+        }
+        
+        footer{
+            text-align: center;
+            background-color:#063D1E;
+        }
+        div#imgdroid{
+            text-align: center;
+            background-color: #83E1AD;
+        }
+        p{
+            line-height: 2.0em;
+        }
+        ol{
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            list-style-position: inside;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curiosidades de Tecnoligias</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo tech, em um só lugar</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Noticias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+
+    </header>
+    
+
+    
+    <main>
+        <h2>História do mascote do Android</h2>
+        <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>        
+        <article>
+            <h3>Primeira varsão</h3>
+                <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+                <picture>
+                    <source media="(min-width: 1060px)" srcset="desafioM2/imagens/dan-droids-pq.png" type="imagem/png">
+                    <img src="dan-droids.png" alt="Androids"> 
+
+                </picture>
+                
+                <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+                <h3>Surge um novo Mascote</h3>
+                <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+                <div class="imagem">
+                    <img src="../desafioM2/imagens/irina-blok.jpg" alt="criadora">
+                </div>               
+                <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="irina-blok-pq.jpg" type="imagem/jpg">
+                    <img src="../desafioM2/imagens/bugdroid.png" alt="bugdroid">
+                </picture>                
+                <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+                <div class="video"><iframe id="videodroid" width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                 
+            
+            
+            <aside>
+                <h3 id="text-l">Quer aprender mais?</h3>
+                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+                <ol>
+                    <li>1.5 - Cupcake</li>
+                    <li>1.6 - Donut</li>
+                    <li>2.0 - Eclair</li>
+                    <li>2.2 - Froyo</li>
+                    <li>2.3 - Gingerbread</li>
+                    <li>3.0 - Honeycomb</li>
+                    <li>4.0 - Ice Cream Sandwich</li>
+                    <li>4.1 - Jelly Bean</li>
+                    <li>4.4 - KitKat</li>
+                    <li>5.0 - Lolipop</li>
+                    <li>6.0 - Marshmallow</li>
+                    <li>7.0 - Nougat</li>
+                    <li>8.0 - Oreo</li>
+                    <li>9.0 - Pie</li>
+                </ol>
+                <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
+                    [/EXTRA]</p>
+            </aside>
+            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
+        </article>
+
+    </main>
+    <footer><p>Site criado por Alex, treinamento Curso em Video</p></footer>
+    
+</body>
+</html>

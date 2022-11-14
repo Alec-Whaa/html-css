@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../desafioM2/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{ 
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e; 
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-Bebas: 'Bebas Neue', cursive;
+    --font-Android: 'Android', cursive, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 800;
+    min-width: 450;
+}
+body{
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+}
+header{
+    background-color: var(--cor4);
+    height: 200px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1.1em;
+    text-indent: 20px; /**/
+    line-height: 2em; /*Espaçamento entre as linhas do texto*/
+}
+nav {
+    margin: -20px 0px 2px 0px; /*negativo para ingressar no header*/
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px 10px 0px;
+    margin: 0px 10px 10px 0px;
+    transition-duration: .5s;/*Tempo para transição*/
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
+
+}
+a:empty
+header > h1{
+    color: white;
+    font-family: var(--font-Bebas);
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.466);
+}
+header > p{
+    color: white;
+    text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.466);
+}
+main{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    box-shadow: 0px 0px 0px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    
+}
+main > section > img{
+    width: 100%;
+}
+.pequena{
+    margin: auto;
+    display: block;
+    max-width: 350px;
+}
+main h1{
+    font-family: var(--font-Android);
+    color: var(--cor5);
+    margin-bottom: 10px;
+    
+    
+}
+main h2{
+    font-family: var(--font-Android);
+    color: var(--cor5);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);/*não marcará no fundo do backgroud*/
+}
+main > section > article > h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.android{
+    font-family: var(--font-Android);
+    color: var(--cor5);
+}
+.video{
+    position: relative;
+    height: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 57.789845%;
+    background-color: #063D1E;
+
+}
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    line-height: 1em;
+    font-size: 1em;
+    padding: 10px;
+    
+}
+aside > h4{
+    background-color: var(--cor5);
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+aside ul{
+    list-style-type: '\2714\0020\00A0';/* 0020 ou 00A0 são código para coloar esparço*/ /*2714 código do 'cheque'*/
+    columns: 2;
+    list-style-position: inside;
+
+}
+footer{
+    background-color: #063d1e;
+    margin: auto;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+}

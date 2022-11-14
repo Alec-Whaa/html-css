@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            text-align: center;
+            display: inline-block;
+            background-color: gray;
+            border: 1px solid black;
+            width: 200px; /*Largura*/
+            height: 200px; /*Altura*/
+        }
+        div > p{ /* div > p  diz que p é filho de div. none para ficar escondido*/
+            display: none;
+        }
+        div:hover >p { /*Animação ao passo o mouse por cima*/
+            background-color: aqua;
+            width: auto;
+            height: auto;
+            border: 3px solid black;
+            display: block;
+            text-align: center;
+            text-align: justify;
+            text-indent: 20%;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="d1">01 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum optio qui, eius dignissimos in, illo veniam pariatur sit quae, ex est soluta hic quas cumque voluptates dolorum quod aperiam a!</p></div>
+
+    <div id="d2">02 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio assumenda, perferendis necessitatibus soluta ratione est totam natus quasi, ex, beatae unde mollitia recusandae eligendi voluptas? At adipisci deserunt eius tenetur!</p></div>
+    <div id="d3">03 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos recusandae a aspernatur aliquid magni in, ipsum excepturi cum fugiat quidem exercitationem nisi quibusdam reiciendis et, possimus quod, qui molestias explicabo.</p></div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tempore quas placeat eaque voluptas quae sequi, corporis exercitationem nesciunt doloribus. Aperiam odio impedit voluptates accusamus, rem voluptatum obcaecati magnam excepturi!</p>
+  
+</body>
+</html>

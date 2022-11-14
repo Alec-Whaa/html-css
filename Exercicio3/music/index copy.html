@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em diferentes tamanhos de telas</title>
+</head>
+<body>
+    <h1>Bem vindo!!</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="../Imagem-p.png.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="../imagem-m.png.jpg" type="image/jpg">
+        <img src="../imagem-g.png.jpg" alt="Imagem flexivel">
+    </picture>
+    <h2>Vamos reproduzir áudios</h2>
+    <p>Aprendendo a colocar áudios em <Strong>HTML 5</Strong></p>
+    <audio src="music.mp3.mp3" controls autoplay>Musica 1</audio> <br><!-- audios suportados MP3 OGG WAV-->
+    <audio src="music2.mp3.mp3" controls autoplay></audio><br><!-- MP3 OGG WAV-->
+    <!--Outro jeito de fazer-->
+    <audio preload="metadata" controls autoplay><br>
+        <source src="music.mp33.mp3" type="audio/mpeg"><br>
+        <source src="music2.mp33.ogg" type="audio/ogg"><br>
+        <source src="music.mp33.wav" type="audio/wav"><!--arquivo grande-->
+        <p>Infelizmene seu navegador não consegue baixar áudio. <a href="music.mp3.mp3">click aq para baixar o MP3</a></p>
+    </audio>
+
+</body>
+</html>
